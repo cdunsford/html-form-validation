@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <!--<script src="./index.js"></script>-->
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Create a form with multiple fields that accept user input.
+        Add two separate sets of radio buttons or checkboxes.
+        Search how to add placeholder (hint hint) to an input field. A placeholder shows ups when the field has no value, 
+        it disappears after the user types or selects something in the field.-->
+        <form action="" method="post">
+            <div id="username-div">
+                <label for="username">User Name</label>
+                <input type="text" id="username" required placeholder="uname">
+            </div>
+
+            <div id="password-div">
+                <label for="password">password</label>
+                <input type="text" id="password" required placeholder="pword">    
+            </div>
+
+            <p>
+                <input type="checkbox" name="update-items" id="update-items-phone" value="phone">Update Phone
+                <input type="checkbox" name="update-items" id="update-items-email" value="email">Update email
+                <input type="checkbox" name="update-items" id="update-items-picture" value="picture">Update picture
+            </p>
+
+            <p>
+                <input type="checkbox" name="social-options" id="social-options-email" value="subscribe-email">Subscribe to email
+                <input type="checkbox" name="social-options" id="social-options-fb-group" value="subscribe-facebook">Join Facebook group
+                <input type="checkbox" name="social-options" id="social-options-fb-like" value="subscribe-like">Like our Facebook page
+            </p>
+
+            <p>
+                <textarea name="comment" id="comment-area" cols="30" rows="10" placeholder="Enter your comments here"></textarea>
+            </p>
+
+
+
+
+            
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+            
+        </form>
+</body>
+</html>
